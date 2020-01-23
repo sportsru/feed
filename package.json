@@ -10,6 +10,7 @@
   "scripts": {
     "build": "rimraf lib/ && mkdir lib && tsc",
     "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "test": "export NODE_ENV=test && jest --silent",
     "test-travis": "export NODE_ENV=test && jest --coverage"
   },
